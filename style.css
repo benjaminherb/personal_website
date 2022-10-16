@@ -1,0 +1,152 @@
+@font-face{
+    font-family: "Roboto Mono";
+    src: url(RobotoMono-VariableFont_wght.ttf) format("truetype");
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    color: #000000;
+    font-family: Roboto Mono;
+}
+
+/* index.html */
+
+.container {
+    display: flex;
+    height: 92vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    padding: 20px;
+    border-style: solid;
+    max-width: 500px;
+}
+
+.title {
+    padding: 5px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.linklist {
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.linklist a {
+    color: #660066; 
+    text-decoration: none;
+    
+}
+.linklist a:hover{
+    color:#AA00AA;
+}
+
+
+.pgpfingerprint {
+    text-align: center;
+    padding: 5px;
+    color: #999999;
+}
+
+/* subpages */
+
+.subpagetitle {
+    padding: 0px 20px 10px 20px;
+    font-size: 2em;
+    text-align: left;
+    font-weight: bold;
+}
+
+.subpagetitle a {
+    color: #999999;
+    text-decoration: none;
+}
+
+.blackhover:hover {
+    color: black;
+}
+
+.container{}
+
+@media screen and (min-height: 900px) {
+    .container {
+        display: flex;
+        height: 98vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* film */
+
+.moviegallery {
+    border-style: solid;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+.moviegallery img {
+    width: 100%;
+}
+
+.moviebox {
+    max-width: 1500px;
+    margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+    .moviegallery { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media screen and (min-width: 1000px) {
+   .moviegallery { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media screen and (min-width: 1400px) {
+    .moviegallery { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media screen and (min-width: 1800px) {
+    .moviegallery { grid-template-columns: repeat(5, 1fr); }
+}
+
+/* photography */
+
+.photobox {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.gallery {
+    border-style: solid;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media screen and (min-width: 1600px) {
+    .gallery { grid-template-columns: repeat(4, 1fr); }
+}
+
