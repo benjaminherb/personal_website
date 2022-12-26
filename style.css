@@ -76,7 +76,6 @@ html {
     color: black;
 }
 
-.container{}
 
 @media screen and (min-height: 900px) {
     .container {
@@ -94,7 +93,7 @@ html {
     border-style: solid;
     display: grid;
     padding: 20px;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 2fr);
     grid-gap: 20px;
 }
 
@@ -108,19 +107,19 @@ html {
 }
 
 @media screen and (min-width: 600px) {
-    .moviegallery { grid-template-columns: repeat(2, 1fr); }
+    .moviegallery { grid-template-columns: repeat(2, 2fr); }
 }
 
 @media screen and (min-width: 1000px) {
-   .moviegallery { grid-template-columns: repeat(3, 1fr); }
+   .moviegallery { grid-template-columns: repeat(3, 2fr); }
 }
 
 @media screen and (min-width: 1400px) {
-    .moviegallery { grid-template-columns: repeat(4, 1fr); }
+    .moviegallery { grid-template-columns: repeat(4, 2fr); }
 }
 
 @media screen and (min-width: 1800px) {
-    .moviegallery { grid-template-columns: repeat(5, 1fr); }
+    .moviegallery { grid-template-columns: repeat(5, 2fr); }
 }
 
 /* photography */
@@ -134,7 +133,7 @@ html {
     border-style: solid;
     display: grid;
     padding: 20px;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 2fr);
     grid-gap: 20px;
 }
 
@@ -143,14 +142,38 @@ html {
 }
 
 @media screen and (min-width: 800px) {
-    .gallery { grid-template-columns: repeat(2, 1fr); }
+    .gallery { grid-template-columns: repeat(2, 2fr); }
 }
 
 @media screen and (min-width: 1200px) {
-    .gallery { grid-template-columns: repeat(3, 1fr); }
+    .gallery { grid-template-columns: repeat(3, 2fr); }
 }
 
 @media screen and (min-width: 1600px) {
-    .gallery { grid-template-columns: repeat(4, 1fr); }
+    .gallery { grid-template-columns: repeat(4, 2fr); }
 }
 
+/* Color */
+.colorbox {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.color {
+    border-style: solid;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.plot {
+    border-style: solid;
+    width: 700px;
+    height: 700px;
+}
+
+.code {
+background-color: #EEE;
+padding: 20px;
+}
