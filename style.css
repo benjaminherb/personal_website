@@ -156,7 +156,7 @@ html {
     border-style: solid;
     display: grid;
     padding: 20px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 2fr);
     grid-gap: 20px;
 }
 
@@ -167,6 +167,21 @@ html {
 }
 
 .code {
+    border-style: solid;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.code h1 {
+    font-size: 20pt;
+    margin: 0 0 0 0;
+}
+.code p {
 background-color: #EEE;
 padding: 20px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .color { grid-template-columns: repeat(2, 1fr); }
 }

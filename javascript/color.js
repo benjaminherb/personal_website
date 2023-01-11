@@ -13,23 +13,23 @@ async function create_scatter_plot(name) {
 
   const layout = {
     scene: {
-      xaxis: { title: data.xlabel, showspikes: false}, //, range: data.xrange},
-      yaxis: { title: data.ylabel, showspikes: false}, //, range: data.yrange},
-      zaxis: { title: data.zlabel, showspikes: false}, //, range: data.zrange},
+      xaxis: { title: data.xlabel, showspikes: false }, //, range: data.xrange},
+      yaxis: { title: data.ylabel, showspikes: false }, //, range: data.yrange},
+      zaxis: { title: data.zlabel, showspikes: false }, //, range: data.zrange},
       camera: {
         projection: {
           type: "orthographic"
         }
       },
       margin: {
-        l: 0, b:0, t:0, r:0,
+        l: 0, b: 0, t: 0, r: 0,
       }
 
 
     },
-      margin: {
-        l: 0, b:0, t:0, r:0,
-      }
+    margin: {
+      l: 0, b: 0, t: 0, r: 0,
+    }
   };
 
   const trace = {
